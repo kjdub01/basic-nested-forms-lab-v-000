@@ -9,7 +9,7 @@ class RecipesController < ApplicationController
 
   def new
     @recipe = Recipe.new
-    @recipe..build(ingredient_type: 'first')
+    @recipe.ingredients.build(ingredient_type: 'first')
     @recipe.ingredients.build(ingredient_type: 'second')
   end
 

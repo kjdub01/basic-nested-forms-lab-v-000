@@ -20,5 +20,7 @@ class RecipesController < ApplicationController
   
   private
   
-  def recipe_params()
+  def recipe_params
+    recipe
+  end
 end

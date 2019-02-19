@@ -2,6 +2,6 @@
   <%= f.label :title %> 
   <%= f.text_field :title %>
   <%= f.fields_for :ingredients do |ingr| %>
-    <%= ingr.label 
+    <%= ingr.label :ingredient_name
   <% end %>
 <% end %>
